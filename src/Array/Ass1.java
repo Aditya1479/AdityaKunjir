@@ -26,7 +26,7 @@ public class Ass1 {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] a = {10,2,3,3};
+		int[] a = {10,2,3,3,11,};
 		Ass1 as = new Ass1();
 		int diff = as.getDiffEvenOddNum(a);
 		System.out.println(" Diff betn Odd and even No "+diff);
