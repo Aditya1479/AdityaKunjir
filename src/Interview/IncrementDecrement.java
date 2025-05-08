@@ -27,6 +27,8 @@ public class IncrementDecrement {
 		// TODO Auto-generated method stub
 		IncrementDecrement I1 = new IncrementDecrement();
 		I1.m1();
+		I1.PostIncremnet();
+		I1.PreIncremnet();
 	}
 
 }

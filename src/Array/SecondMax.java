@@ -19,8 +19,8 @@ public class SecondMax {
 				SecondMax=input[i];
 			}
 		}
-		System.out.println(firstMax);
-		System.out.println(SecondMax);
+		System.out.println(" Firstmax number "+firstMax);
+		System.out.println(" Secondmax "+SecondMax);
 		
 	}
 
