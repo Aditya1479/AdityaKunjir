@@ -11,7 +11,7 @@ public class WhilCharFreq {
 			input=input.replace(input.valueOf(ch), "");
 			int Newlength=input.length();
 			if(orLength-Newlength>1) {
-				System.out.println(ch+ " repetative character> "+(orLength-Newlength));
+				System.out.println(ch+ " first repetative character> "+(orLength-Newlength));
 				break;
 			}
 			//System.out.println(ch+ "---> "+(orLength-Newlength));
@@ -73,7 +73,12 @@ public class WhilCharFreq {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		WhilCharFreq w1 = new WhilCharFreq();
+		w1.m1("atbdchnocredits");
+		w1.m2("atbdchnocredits");;
+		w1.m3("atbdchnocredits");
+		w1.m4("atbdchnocredits");
 		w1.m5("atbdchnocredits");
+		
 	}
 
 }

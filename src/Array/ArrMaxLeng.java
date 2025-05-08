@@ -1,29 +1,23 @@
 //Print Maxlength of string from an array 
 package Array;
 
-import java.util.Arrays;
-
 public class ArrMaxLeng {
 	static int maxlength = 0;
-	static String output="";
+	static String output = "";
 
 	String[] m1(String[] input) {
 		for (int i = 0; i < input.length; i++) {
 			m2(input[i]);
 		}
-		
 		return null;
-
 	}
 
 	void m2(String input) {
 		int strlength = input.length();
 		if (strlength > maxlength) {
 			maxlength = strlength;
-			output=input;
-
+			output = input;
 		}
-
 	}
 
 	// return input;
@@ -38,7 +32,7 @@ public class ArrMaxLeng {
 		input[2] = "J1ay6";
 		input[3] = "credits1";
 		a.m1(input);
-		System.out.println(output+ " " +maxlength);
+		System.out.println(output + " " + maxlength);
 
 	}
 }

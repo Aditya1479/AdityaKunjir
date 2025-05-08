@@ -31,7 +31,7 @@ public class FrequcnyOfEachChainString {
 		// TODO Auto-generated method stub
 		String userinput ="akanksha";
 		FrequcnyOfEachChainString f1 = new FrequcnyOfEachChainString();
-		//f1.printFrquency(userinput);
+		//f1.printFrquency(userinput,'a');
 		f1.maxFrqCharacter(userinput);
 	}
 
