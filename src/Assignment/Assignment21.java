@@ -29,7 +29,8 @@ public class Assignment21 {
 		// TODO Auto-generated method stub
 		Assignment21 as = new Assignment21();
 		as.findMaxCharFreq("teecccchnoceredites");
-
+		as.findMaxCharFreq("aakansha");
+		as.findMaxCharFreq("technocredits");
 	}
 
 }

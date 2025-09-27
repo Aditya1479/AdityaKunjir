@@ -1,3 +1,4 @@
+//Write a program to print sum of all the digits within given input.
 package Assignment;
 
 public class Assignment24 {
@@ -14,7 +15,7 @@ public class Assignment24 {
 		
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		// TODO Auto-generated method stub
 		Assignment24 as24 = new Assignment24();
 		as24.m1("Rah5ulTEC6Hnoc2redItS");
