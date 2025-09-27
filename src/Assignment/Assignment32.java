@@ -1,3 +1,4 @@
+//Write a method to print number of Uppercase,lowercase and digits in the input using ascii
 package Assignment;
 
 public class Assignment32 {

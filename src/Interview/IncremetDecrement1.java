@@ -12,7 +12,7 @@ public class IncremetDecrement1 {
 		System.out.println(temp); //40
 		System.out.println("Sum of all " +(num+count+temp));
 		System.out.println("Sum of all " + num +count +temp);
-		System.out.println( + num +count +temp +" Sum of all " + num +count +temp);
+		System.out.println( "This prints the sum"+ num +count +temp +" this print the appended values " + num +count +temp);
 		
 	}
 

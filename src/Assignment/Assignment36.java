@@ -1,3 +1,4 @@
+//Swap first and last element of an array, print it to confirm swap operation.
 package Assignment;
 
 import java.util.Arrays;
@@ -7,8 +8,10 @@ public class Assignment36 {
 	
 	void swapArrayElement(String[] arr) {
 		int length=arr.length;
-		arr[0]=arr[length-1];
-		arr[length-1]=arr[0];
+		   String temp = arr[0];
+	        arr[0] = arr[length - 1];
+	        arr[length - 1] = temp;
+		
 		System.out.println(Arrays.toString(arr));
 	}
 
