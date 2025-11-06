@@ -1,3 +1,4 @@
+//Write a method which takes input and return to return all Uppercase from given input.
 package Assignment;
 
 public class Assignment30 {

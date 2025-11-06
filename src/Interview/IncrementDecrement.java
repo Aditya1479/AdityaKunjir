@@ -18,7 +18,7 @@ public class IncrementDecrement {
 	
 	void m1() {
 		int num =10; //11
-		int sum= ++num + num++ + --num + --num + num++ + 5;//22+ 11+ 10+10+5 =58
+		int sum= ++num + num++ + --num + --num + num++ + 5;//11+11+11+10+10+5
 		System.out.println("  " +sum);
 		System.out.println("  " +num);
 	}

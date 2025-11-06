@@ -1,9 +1,12 @@
+/.classpath
+/.idea/
 /.project
 /Abstraction/
 /Array/
 /Assignment/
 /Basic.iml
 /Behavior/
+/ChromeDriver/
 /CollectionsPackage/
 /Contructor/
 /DesignPattern/
@@ -11,6 +14,7 @@
 /GitBranch/
 /Inheritance/
 /Interview/
+/Iterator/
 /MultiThreading/
 /ProgrammigTest/
 /Scanner/
@@ -22,4 +26,6 @@
 /dummy/
 /exceptionHandling/
 /out/
+/seleniumPacakage/
+/seleniumPacakage_Actions/
 /swithCase/
