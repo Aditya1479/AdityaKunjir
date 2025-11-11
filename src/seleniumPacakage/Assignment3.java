@@ -1,5 +1,7 @@
 package seleniumPacakage;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +16,7 @@ public class Assignment3 {
 		System.out.println("Step- Launch Chrome Browser");
 		System.setProperty("webDriver.chrome.driver", ".\\ChromeDriver\\chromedriver.exe");
 		driver = new ChromeDriver();
-
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		System.out.println("Maximize ChromeDriver");
 		driver.manage().window().maximize();
 
@@ -22,13 +24,13 @@ public class Assignment3 {
 		driver.get("http://www.automationbykrishna.com/");
 	}
 
-	void verifyLoginTest() throws InterruptedException {
+	void verifyLoginTest() {
 		setup();
 		System.out.println("Step-Click on Basic Element");
 		WebElement basicElement = driver.findElement(By.id("basicelements"));
 		basicElement.click();
 
-		Thread.sleep(3000);
+		
 		System.out.println("Step- write Aditya in userFirstNaame");
 		WebElement userFirstName = driver.findElement(By.id("UserFirstName"));
 		String firstName = "Aditya";
@@ -68,7 +70,7 @@ public class Assignment3 {
 		driver.close();
 	}
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		new Assignment3().verifyLoginTest();
 

@@ -1,5 +1,7 @@
 package seleniumPacakage_Actions;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,10 +11,9 @@ public class DragandDropActions {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver=LaunchBrowser.launchChrome("https://jqueryui.com/");
-		
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//a[text()='Droppable']")).click();
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='demo-frame']")));
-		Thread.sleep(3000);
 		WebElement sourceElement= driver.findElement(By.xpath("//div[@id='draggable']"));
 		WebElement targetElement= driver.findElement(By.xpath("//div[@id='droppable']"));
 		

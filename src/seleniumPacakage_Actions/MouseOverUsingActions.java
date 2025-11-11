@@ -1,6 +1,7 @@
 package seleniumPacakage_Actions;
 
 import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -12,7 +13,8 @@ public class MouseOverUsingActions {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver=LaunchBrowser.launchChrome("http://flipkart.com/");
-		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		
 		try{
 		driver.findElement(By.xpath("//span[@role='button']")).click();
 		}catch(NoSuchElementException e) {
@@ -21,6 +23,7 @@ public class MouseOverUsingActions {
 		
 		Actions action = new Actions(driver);
 		action.moveToElement(driver.findElement(By.xpath("//span[text()='Electronics']"))).perform();
+		System.out.println("electronics over");
 	}
 	
 	public static void scrollFunction(WebDriver dr,WebElement e) {

@@ -1,6 +1,7 @@
 package seleniumPacakage;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,12 +18,13 @@ public class FacebookDropDown {
 		this.driver =new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 	}
 	void fbDetails() {
 		setup("https://www.facebook.com/");
-		waitAbit(2000);
+		//waitAbit(2000);
 		driver.findElement(By.xpath("//a[text()=\"Create new account\"]")).click();
-		waitAbit(2000);
+		//waitAbit(2000);
 		driver.findElement(By.xpath("//div/input[@name='firstname']")).sendKeys("Aditya");
 		driver.findElement(By.xpath("//div/input[@name='lastname']")).sendKeys("kunjir");
 		//reg_email__
@@ -32,7 +34,7 @@ public class FacebookDropDown {
 		WebElement Date = driver.findElement(By.xpath("//select[@name='birthday_day']"));
 		Select select = new Select(Date);
 		select.selectByIndex(29);
-		waitAbit(2000);
+		//waitAbit(2000);
 		WebElement month = driver.findElement(By.xpath("//select[@name='birthday_month']"));
 		month.click();
 		Select MonthSelect = new Select(month);
@@ -66,16 +68,17 @@ public class FacebookDropDown {
 		Selectpronoun.selectByValue("2");
 		String PrintSelectedPronoun =Selectpronoun.getFirstSelectedOption().getText();
 		System.out.println("Selected text is " +PrintSelectedPronoun);
+		driver.close();
 	}
 	
-	void waitAbit(int num) {
-		try {
-			Thread.sleep(num);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+//	void waitAbit(int num) {
+//		try {
+//			Thread.sleep(num);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
