@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,9 +13,10 @@ import org.openqa.selenium.WebElement;
 public class Advancedtablescenarios {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver=LaunchBrowser.launchChrome("http://automationbykrishna.com/");
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		WebElement demoTable = driver.findElement(By.xpath("//a[@id='demotable']"));
 		demoTable.click();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		Set<String> setExpectedLastNames= new LinkedHashSet<String>(Arrays.asList("Kanani","Boda","Sharma","Patro")); 	
 		//*********************************************////////////////
 		//Option 1 to print the all rows on 3 column element

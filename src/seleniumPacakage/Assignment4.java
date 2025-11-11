@@ -1,5 +1,7 @@
 package seleniumPacakage;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +15,7 @@ public class Assignment4 {
 		System.out.println("Step- Launch Chrome Browser");
 		System.setProperty("webDriver.chrome.driver", ".\\ChromeDriver\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		
 		System.out.println("Maximize ChromeDriver");
 		driver.manage().window().maximize();
@@ -24,7 +27,7 @@ public class Assignment4 {
 		WebElement basicElement= driver.findElement(By.id("basicelements"));
 		basicElement.click();
 		
-		Thread.sleep(3000);
+		
 		driver.findElement(By.xpath("//button[text()='Alert']")).click();
 		
 		Alert alert= driver.switchTo().alert();
