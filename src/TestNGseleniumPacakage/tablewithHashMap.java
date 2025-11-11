@@ -1,4 +1,4 @@
-package seleniumPacakage;
+package TestNGseleniumPacakage;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,9 +10,11 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
 public class tablewithHashMap {
 	
+	@Test
 	void printTheCountOfEachDept() throws InterruptedException {
 		WebDriver driver = LaunchBrowser.launchChrome("http://automationbykrishna.com/");
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
@@ -36,6 +38,7 @@ public class tablewithHashMap {
 		driver.close();
 	}
 	
+	@Test
 	void printThenameswhoseAgeisgreateThan50() {
 		List<String> expectedList= new ArrayList<String>(Arrays.asList("Ashton Cox","Brielle Williamson"));
 		List<String> ActualList= new ArrayList<String>();	
@@ -58,7 +61,7 @@ public class tablewithHashMap {
 		driver.close();
 	}
 	
-	
+	@Test
 	void printThenameswhoseAgeisgreateThan50andlocationisLondon() {
 		List<String> expectedList= new ArrayList<String>(Arrays.asList("Angelica Ramos","Bradley Greer","Bruno Nash"));
 		List<String> ActualList= new ArrayList<String>();	
@@ -81,9 +84,5 @@ public class tablewithHashMap {
 		}
 		driver.close();
 	}
-	public static void main(String[] args) throws InterruptedException {
-		new tablewithHashMap().printTheCountOfEachDept();
-		new tablewithHashMap().printThenameswhoseAgeisgreateThan50();
-		new tablewithHashMap().printThenameswhoseAgeisgreateThan50andlocationisLondon();
-	}
+	
 }

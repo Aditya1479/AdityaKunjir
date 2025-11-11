@@ -13,7 +13,7 @@ import org.openqa.selenium.WebElement;
 public class Advancedtablescenarios {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver=LaunchBrowser.launchChrome("http://automationbykrishna.com/");
-		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		WebElement demoTable = driver.findElement(By.xpath("//a[@id='demotable']"));
 		demoTable.click();
 		//Thread.sleep(3000);

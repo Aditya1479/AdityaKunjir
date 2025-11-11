@@ -1,4 +1,4 @@
-package seleniumPacakage;
+package TestNGseleniumPacakage;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
 public class FacebookDropDown {
 	WebDriver driver;
@@ -20,6 +21,8 @@ public class FacebookDropDown {
 		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	}
+	
+	@Test
 	void fbDetails() {
 		setup("https://www.facebook.com/");
 		//waitAbit(2000);
@@ -80,11 +83,5 @@ public class FacebookDropDown {
 //		}
 //	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		FacebookDropDown fb = new FacebookDropDown();
-		fb.fbDetails();
-
-	}
 
 }
