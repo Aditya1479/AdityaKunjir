@@ -1,4 +1,4 @@
-package seleniumPacakage;
+package TestNGseleniumPacakage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class Assignment3 {
 
@@ -23,7 +24,8 @@ public class Assignment3 {
 		System.out.println("Step- Launch Amazoan website");
 		driver.get("http://www.automationbykrishna.com/");
 	}
-
+	
+	@Test
 	void verifyLoginTest() {
 		setup();
 		System.out.println("Step-Click on Basic Element");
@@ -70,9 +72,4 @@ public class Assignment3 {
 		driver.close();
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		new Assignment3().verifyLoginTest();
-
-	}
 }

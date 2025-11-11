@@ -16,7 +16,7 @@ public class Assignment6 {
 		System.out.println("Step- Launch Chrome Browser");
 		System.setProperty("webDriver.chrome.driver", ".\\ChromeDriver\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		
 		System.out.println("Maximize ChromeDriver");
 		driver.manage().window().maximize();

@@ -19,7 +19,7 @@ public class multiSelect {
 		this.driver =new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(url);
-		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	}
 	
 	void verfiyMultiSelectDropDownValues() {

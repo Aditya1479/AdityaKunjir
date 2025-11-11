@@ -1,4 +1,4 @@
-package seleniumPacakage_Actions;
+package TestNGPacakage_Actions;
 
 import java.util.concurrent.TimeUnit;
 
@@ -6,10 +6,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 public class DragandDropActions {
-
-	public static void main(String[] args) throws InterruptedException {
+	
+	@Test
+	void verifyDragAndDropUsingActions() {
 		WebDriver driver=LaunchBrowser.launchChrome("https://jqueryui.com/");
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//a[text()='Droppable']")).click();
@@ -22,7 +24,7 @@ public class DragandDropActions {
 		//Option 2
 		action.clickAndHold(sourceElement).moveToElement(targetElement).release().build().perform();
 		//To perform multiple action build() needs to be called.
-		
-		
+		driver.close();
 	}
+	
 }

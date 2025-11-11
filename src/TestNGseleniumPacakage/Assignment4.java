@@ -1,4 +1,4 @@
-package seleniumPacakage;
+package TestNGseleniumPacakage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -7,34 +7,34 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class Assignment4 {
-
-	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
+	
+	@Test
+	void verifyAlertText() {
 		System.out.println("Step- Launch Chrome Browser");
 		System.setProperty("webDriver.chrome.driver", ".\\ChromeDriver\\chromedriver.exe");
-		WebDriver driver= new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
 		System.out.println("Maximize ChromeDriver");
 		driver.manage().window().maximize();
-		
+
 		System.out.println("Step- Launch Amazoan website");
 		driver.get("http://www.automationbykrishna.com/");
-		
+
 		System.out.println("Step-Click on Basic Element");
-		WebElement basicElement= driver.findElement(By.id("basicelements"));
+		WebElement basicElement = driver.findElement(By.id("basicelements"));
 		basicElement.click();
-		
-		
+
 		driver.findElement(By.xpath("//button[text()='Alert']")).click();
-		
-		Alert alert= driver.switchTo().alert();
-		String alertText= alert.getText();
-		if(alertText.contains("TechnoCredits")) {
+
+		Alert alert = driver.switchTo().alert();
+		String alertText = alert.getText();
+		if (alertText.contains("TechnoCredits")) {
 			System.out.println("Test passed");
-		}else {
+		} else {
 			System.out.println("Test Failed");
 		}
 		alert.accept();
