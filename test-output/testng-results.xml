@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-16T12:47:44 IST" name="Default suite" finished-at="2025-11-16T12:47:44 IST" duration-ms="86">
+    <groups>
+    </groups>
+    <test started-at="2025-11-16T12:47:44 IST" name="Default test" finished-at="2025-11-16T12:47:44 IST" duration-ms="86">
+      <class name="TestNGParameter.p1">
+        <test-method signature="m1(java.lang.String,java.lang.String)[pri:0, instance:TestNGParameter.p1@13c9d689]" started-at="2025-11-16T12:47:44 IST" name="m1" finished-at="2025-11-16T12:47:44 IST" duration-ms="15" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Prod]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m1 -->
+      </class> <!-- TestNGParameter.p1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

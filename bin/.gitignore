@@ -18,9 +18,13 @@
 /MultiThreading/
 /ProgrammigTest/
 /Scanner/
+/SeleniumMultipleWindow/
 /SingletonDesignPattern/
 /String/
 /SubString/
+/TestNGPacakage_Actions/
+/TestNGParameter/
+/TestNGseleniumPacakage/
 /basic/
 /blankFinal/
 /dummy/
@@ -28,7 +32,7 @@
 /out/
 /seleniumPacakage/
 /seleniumPacakage_Actions/
-/swithCase/
 /seleniumPacakage_TestNG/
-/TestNGseleniumPacakage/
-/TestNGPacakage_Actions/
+/seleniumStandAlone/
+/swithCase/
+/test-output/

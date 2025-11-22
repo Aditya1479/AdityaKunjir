@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-11T22:38:02 IST" name="Default suite" finished-at="2025-11-11T22:38:08 IST" duration-ms="5990">
+  <suite started-at="2025-11-19T22:46:00 IST" name="Default suite" finished-at="2025-11-19T22:46:07 IST" duration-ms="7562">
     <groups>
     </groups>
-    <test started-at="2025-11-11T22:38:02 IST" name="Default test" finished-at="2025-11-11T22:38:08 IST" duration-ms="5990">
-      <class name="TestNGseleniumPacakage.tablewithHashMap2">
-        <test-method signature="CalculateRows()[pri:0, instance:TestNGseleniumPacakage.tablewithHashMap2@6b2ea799]" started-at="2025-11-11T22:38:02 IST" name="CalculateRows" finished-at="2025-11-11T22:38:08 IST" duration-ms="5924" status="PASS">
+    <test started-at="2025-11-19T22:46:00 IST" name="Default test" finished-at="2025-11-19T22:46:07 IST" duration-ms="7562">
+      <class name="seleniumStandAlone.TC2">
+        <test-method signature="login()[pri:0, instance:seleniumStandAlone.TC2@411f53a0]" started-at="2025-11-19T22:46:00 IST" name="login" finished-at="2025-11-19T22:46:07 IST" duration-ms="7489" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CalculateRows -->
-      </class> <!-- TestNGseleniumPacakage.tablewithHashMap2 -->
+        </test-method> <!-- login -->
+      </class> <!-- seleniumStandAlone.TC2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
