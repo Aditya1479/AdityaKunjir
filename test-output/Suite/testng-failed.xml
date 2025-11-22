@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestNGseleniumPacakage.Assignment6">
+        <methods>
+          <include name="verifyJSInput"/>
+        </methods>
+      </class> <!-- TestNGseleniumPacakage.Assignment6 -->
+      <class name="TestNGseleniumPacakage.FacebookDropDown">
+        <methods>
+          <include name="fbDetails"/>
+        </methods>
+      </class> <!-- TestNGseleniumPacakage.FacebookDropDown -->
+      <class name="TestNGseleniumPacakage.Assignment5">
+        <methods>
+          <include name="verify_AlertText"/>
+        </methods>
+      </class> <!-- TestNGseleniumPacakage.Assignment5 -->
+      <class name="TestNGseleniumPacakage.tablewithHashMap">
+        <methods>
+          <include name="printTheCountOfEachDept"/>
+          <include name="printThenameswhoseAgeisgreateThan50"/>
+          <include name="printThenameswhoseAgeisgreateThan50andlocationisLondon"/>
+        </methods>
+      </class> <!-- TestNGseleniumPacakage.tablewithHashMap -->
+      <class name="TestNGseleniumPacakage.Assignment4">
+        <methods>
+          <include name="verifyAlertText"/>
+        </methods>
+      </class> <!-- TestNGseleniumPacakage.Assignment4 -->
+      <class name="TestNGseleniumPacakage.tablewithHashMap2">
+        <methods>
+          <include name="CalculateRows"/>
+        </methods>
+      </class> <!-- TestNGseleniumPacakage.tablewithHashMap2 -->
+      <class name="TestNGseleniumPacakage.tableElements">
+        <methods>
+          <include name="TableElementsTest"/>
+        </methods>
+      </class> <!-- TestNGseleniumPacakage.tableElements -->
+      <class name="TestNGseleniumPacakage.multiSelect">
+        <methods>
+          <include name="verfiyMultiSelectDropDownValues"/>
+        </methods>
+      </class> <!-- TestNGseleniumPacakage.multiSelect -->
+      <class name="TestNGseleniumPacakage.Assignment3">
+        <methods>
+          <include name="verifyLoginTest"/>
+        </methods>
+      </class> <!-- TestNGseleniumPacakage.Assignment3 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
