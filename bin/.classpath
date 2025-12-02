@@ -87,5 +87,9 @@
 	<classpathentry kind="lib" path="D:/Software/selenium-java-4.13.0/lib/reactive-streams-1.0.4.jar"/>
 	<classpathentry kind="lib" path="D:/Software/selenium-java-4.13.0/lib/slf4j-api-2.0.7.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Software/ApachePOI/poi-ooxml-5.5.1.jar"/>
+	<classpathentry kind="lib" path="D:/Software/ApachePOI/poi-5.5.1.jar"/>
+	<classpathentry kind="lib" path="D:/Software/ApachePOI/poi-5.2.5.jar"/>
+	<classpathentry kind="lib" path="D:/Software/ApachePOI/poi-ooxml-5.2.5.jar"/>
 	<classpathentry kind="output" path=""/>
 </classpath>
