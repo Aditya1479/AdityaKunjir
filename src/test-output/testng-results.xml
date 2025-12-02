@@ -1,17 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-19T22:46:00 IST" name="Default suite" finished-at="2025-11-19T22:46:07 IST" duration-ms="7562">
+  <suite started-at="2025-11-30T23:58:41 IST" name="Default suite" finished-at="2025-11-30T23:59:01 IST" duration-ms="20199">
     <groups>
     </groups>
-    <test started-at="2025-11-19T22:46:00 IST" name="Default test" finished-at="2025-11-19T22:46:07 IST" duration-ms="7562">
-      <class name="seleniumStandAlone.TC2">
-        <test-method signature="login()[pri:0, instance:seleniumStandAlone.TC2@411f53a0]" started-at="2025-11-19T22:46:00 IST" name="login" finished-at="2025-11-19T22:46:07 IST" duration-ms="7489" status="PASS">
+    <test started-at="2025-11-30T23:58:41 IST" name="Default test" finished-at="2025-11-30T23:59:01 IST" duration-ms="20199">
+      <class name="seleniumPacakage.dataDrivenExample">
+        <test-method is-config="true" signature="setup()[pri:0, instance:seleniumPacakage.dataDrivenExample@5542c4ed]" started-at="2025-11-30T23:58:41 IST" name="setup" finished-at="2025-11-30T23:58:51 IST" duration-ms="10185" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- seleniumStandAlone.TC2 -->
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:seleniumPacakage.dataDrivenExample@5542c4ed]" started-at="2025-11-30T23:58:51 IST" name="verifyLogin" data-provider="loginDataProvider" finished-at="2025-11-30T23:58:51 IST" duration-ms="588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aditya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kunjir123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Success!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumPacakage.dataDrivenExample@5542c4ed]" started-at="2025-11-30T23:58:51 IST" name="tearDown" finished-at="2025-11-30T23:58:52 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:seleniumPacakage.dataDrivenExample@5542c4ed]" started-at="2025-11-30T23:58:52 IST" name="setup" finished-at="2025-11-30T23:59:00 IST" duration-ms="8541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:seleniumPacakage.dataDrivenExample@5542c4ed]" started-at="2025-11-30T23:59:00 IST" name="verifyLogin" data-provider="loginDataProvider" finished-at="2025-11-30T23:59:01 IST" duration-ms="500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[adi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kunji]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Failed! please enter strong password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumPacakage.dataDrivenExample@5542c4ed]" started-at="2025-11-30T23:59:01 IST" name="tearDown" finished-at="2025-11-30T23:59:01 IST" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumPacakage.dataDrivenExample -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

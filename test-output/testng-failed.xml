@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNGParameter.p1">
+      <class name="seleniumAssertPacakage.explicitWaitDemo">
         <methods>
-          <include name="m1"/>
+          <include name="fbDetails1"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- TestNGParameter.p1 -->
+      </class> <!-- seleniumAssertPacakage.explicitWaitDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

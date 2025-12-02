@@ -3,6 +3,7 @@
 /.project
 /Abstraction/
 /Array/
+/Assert.xml
 /Assignment/
 /Basic.iml
 /Behavior/
@@ -30,9 +31,11 @@
 /dummy/
 /exceptionHandling/
 /out/
+/seleniumAssertPacakage/
 /seleniumPacakage/
 /seleniumPacakage_Actions/
 /seleniumPacakage_TestNG/
 /seleniumStandAlone/
 /swithCase/
 /test-output/
+/utility/
