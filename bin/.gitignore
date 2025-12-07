@@ -1,13 +1,7 @@
-/.classpath
-/.idea/
-/.project
 /Abstraction/
 /Array/
-/Assert.xml
 /Assignment/
-/Basic.iml
 /Behavior/
-/ChromeDriver/
 /CollectionsPackage/
 /Contructor/
 /DesignPattern/
@@ -30,8 +24,8 @@
 /blankFinal/
 /dummy/
 /exceptionHandling/
-/out/
 /seleniumAssertPacakage/
+/seleniumDataDriven/
 /seleniumPacakage/
 /seleniumPacakage_Actions/
 /seleniumPacakage_TestNG/
